@@ -1,0 +1,236 @@
+/* Main styles*/
+@font-face {
+    font-family: "Lexend-mega";
+    src: url(resources/LexendMega-Regular.ttf);
+  }
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 22px;
+    font-family: "Lexend-mega", "sans-serif";
+   }
+
+main,
+footer {
+    background-color: white;
+}
+
+
+
+/* 1. Navigation Styles*/
+header {
+    background-color:whitesmoke;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 5;
+    top: 0px;
+    box-shadow: 0px 1px 5px black;
+}
+
+.logo h1 {
+    margin-left: 10px;
+    font-size: 24px;
+    font-family: "Lexend-mega";
+}
+
+nav li {
+    display: inline-flex;
+    padding-right: 10px;
+    margin-right: 10px;
+    list-style: none;
+}
+
+nav a {
+    color: black;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+
+
+/* 2. Mission Statement*/
+
+#mission-statement {
+    background-image: url('resources/skyscrapers.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 570px;
+    margin-top: 60px;
+    display: flex;
+}
+
+.mission-title {
+    margin: auto;
+    text-align: center;
+    background-color: #ffffff99;
+    color: black;
+    width: 100%;
+}
+
+.mission-title h1 {
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+.mission-title h4 {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding-bottom: 5px;
+}
+
+
+
+/* 3. Portfolio*/
+
+#portfolio {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-title {
+    text-align: center;
+    width: 70%;
+    margin: 0px auto;
+    margin-bottom: 5%;
+}
+
+.portfolio-title h2 {
+    font-size: 2rem;
+    line-height: 1.5;
+    color:black;
+}
+
+.portfolio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+.portfolio-gallery img {
+    height: 200px;
+    width: 300px;
+    padding: 10px;
+}
+
+
+.portfolio-title h4,
+.img-hangar h4,
+.img-driving h4,
+.img-blurred-road h4,
+.img-tires h4,
+.img-driving-2 h4{
+    font-size: 1rem;
+    line-height: 1.5;
+    padding-bottom: 5px;
+    color:black;
+    text-align: center;
+}
+
+/* 4. Investment team*/
+#investment-team {
+    background-image: url('resources/clear-air-fly-fantastic-travel.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 570px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.investment-team-title h2 {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: white;
+    padding-top: 20px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.image-cropper {
+    height: 280px;
+    width: 280px;
+    overflow: hidden;
+    border-radius: 50%;
+    filter: drop-shadow(0px 2px 3px black);
+}
+
+.team-container img {
+    width: 100%;
+    height: auto;
+}
+
+.lisa-fischer,
+.alex-lasker,
+.omar-carlsen {
+    width: 300px;
+    color: black;
+    text-align: center;     
+    margin: 15px 20px;
+}
+
+.omar-carlsen img {
+    margin: -90px;
+}
+
+.lisa-fischer img {
+    margin: -20px;
+}
+
+.team-container h4 {
+    padding-top: 17px;
+}
+
+.team-container p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    font-style: italic;
+    padding-top: 10px;
+}
+
+/* 5. Footer*/
+footer {
+    height: 200px;
+    padding-top: 15px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h3 {
+    text-align: center;
+    color: black;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+footer address {
+    line-height: 1.5;
+    text-align: center;
+    color: black;
+    font-size: 0.8rem;
+}
+
+footer h4 {
+    font-size: 0.5rem;
+    padding-top: 40px;
+    color: black;
+    float: left;
+    margin-bottom: 5px;
+}
